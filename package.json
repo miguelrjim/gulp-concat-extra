@@ -1,7 +1,7 @@
 {
   "name": "gulp-concat-extra",
   "version": "0.0.1",
-  "description": "Concat extra files",
+  "description": "Concat extra files to stream",
   "license": "MIT",
   "repository": "miguelrjim/gulp-concat-extra",
   "author": {
@@ -16,7 +16,10 @@
     "test": "mocha"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "package.json",
+    "README.md",
+    "LICENSE.md"
   ],
   "keywords": [
     "gulpplugin"

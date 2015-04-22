@@ -7,7 +7,7 @@ var path = require('path');
 
 module.exports = function (config) {
 	if (!config) {
-		throw new gutil.PluginError('gulp-angular-app-builder', '`configuration` required');
+		throw new gutil.PluginError('gulp-concat-extra', '`configuration` required');
 	}
 
 	return through.obj(function (file, enc, cb) {
@@ -18,7 +18,7 @@ module.exports = function (config) {
 		}
 
 		if (file.isStream()) {
-			cb(new gutil.PluginError('gulp-angular-app-builder', 'Streaming not supported'));
+			cb(new gutil.PluginError('gulp-concat-extra', 'Streaming not supported'));
 			return;
 		}
 
